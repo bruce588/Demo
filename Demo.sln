@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-demo", "web-api-demo\web-api-demo.csproj", "{2FC0A4D8-5753-4FA8-8477-B740BB10C555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-demo", "docker-demo\docker-demo.csproj", "{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "async-demo", "async-demo\async-demo.csproj", "{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|x64.Build.0 = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Debug|x86.Build.0 = Debug|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x64.ActiveCfg = Release|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x64.Build.0 = Release|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x86.Build.0 = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x64.Build.0 = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x86.Build.0 = Debug|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x64.ActiveCfg = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x64.Build.0 = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x86.ActiveCfg = Release|Any CPU
+		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x86.Build.0 = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|x64.Build.0 = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|x86.Build.0 = Debug|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|x64.ActiveCfg = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|x64.Build.0 = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|x86.ActiveCfg = Release|Any CPU
+		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD9FF18D-3BA0-4BD6-9A2A-821DD0D5D9ED}
+	EndGlobalSection
+EndGlobal
