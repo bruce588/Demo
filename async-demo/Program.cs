@@ -3,7 +3,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
-
+#define TestAsync
 namespace async_demo
 {
     class Program
@@ -13,19 +13,27 @@ namespace async_demo
             string content = "";
             Stopwatch sw = new Stopwatch();
             sw.Start();
+
             //使用同步 與 非同步差異--------------------------------------------------------------            
-            Task<string> task= DownloadDataAsync(); //(非同步:Step1)                           
-            //content = DownloadData();//使用同步            
+#if TestAsync //<---(非同步:Step1) 
+            Task<string> task= DownloadDataAsync();  
+#else
+            content = DownloadData();//使用同步   
+#endif
             Console.WriteLine("do main 1");
             Thread.Sleep(500);
             Console.WriteLine("do main 2");
-            content = task.Result;//(非同步:step2)等待資料,直到取得資料
+#if TestAsync //(非同步:step2)等待資料,直到取得資料
+            content = task.Result;//取得資料的code放的位置很重要
+#endif
             Console.WriteLine($"DownloadData=>{content}");
             //-------------------------------------------------------------- 
             sw.Stop();
             Console.WriteLine($"Total=>{sw.ElapsedMilliseconds} Milliseconds");
             Console.ReadLine();
         }
+
+
 
         public static string DownloadData()
         {

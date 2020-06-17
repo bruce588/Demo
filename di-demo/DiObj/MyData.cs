@@ -11,9 +11,11 @@ namespace mvc1
         string Name { get; set; }
     }
 
+
         public class MyData : IMyData
         {
-        private int _counter = 1;
+            //計數器
+            private int _counter = 1;
             public int Counter { get {
                 return _counter++;
             } 
