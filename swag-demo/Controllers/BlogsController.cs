@@ -20,12 +20,21 @@ namespace swag_demo.Controllers
             _context = context;
         }
         // GET: api/Blogs
+        /// <summary>
+        /// 取得Blog的資料
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Blogs>>> GetBlogs()
         {
             return await _context.Blogs.ToListAsync();
         }
 
+        /// <summary>
+        /// 取得一筆Blog資料
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET: api/Blogs/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -43,6 +52,12 @@ namespace swag_demo.Controllers
             return blogs;
         }
 
+        /// <summary>
+        /// 更新Blog資料
+        /// </summary>
+        /// <param name="id">更新的ID</param>
+        /// <param name="blogs">更新的內容</param>
+        /// <returns></returns>
         // PUT: api/Blogs/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -79,6 +94,11 @@ namespace swag_demo.Controllers
             return NoContent();
         }
 
+        /// <summary>
+        /// 新增Blog資料
+        /// </summary>
+        /// <param name="blogs">新增的資料</param>
+        /// <returns></returns>
         // POST: api/Blogs
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
@@ -108,6 +128,11 @@ namespace swag_demo.Controllers
             return CreatedAtAction("GetBlogs", new { id = blogs.BlogId }, blogs);
         }
 
+        /// <summary>
+        /// 刪除Blog
+        /// </summary>
+        /// <param name="id">要刪除的ID</param>
+        /// <returns></returns>
         // DELETE: api/Blogs/5
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]

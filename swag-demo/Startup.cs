@@ -31,6 +31,7 @@ namespace swag_demo
                           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
                       );
 
+        
             services.AddControllers();
         }
 
@@ -47,6 +48,8 @@ namespace swag_demo
             app.UseRouting();
 
             app.UseAuthorization();
+
+         
 
             app.UseEndpoints(endpoints =>
             {
