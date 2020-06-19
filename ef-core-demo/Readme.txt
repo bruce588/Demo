@@ -34,13 +34,3 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 --Step 3:退版
     dotnet ef migrations script AddPostColumn init -o Sql\RemoveColumn.sql
 
---新增API 做測試
-到 controllers 右鍵 => 選 新增 =>新增 scaffold 項目
-
-
-
---可改連線字串放到設定檔中
- 到appsetting.json 將連線字串加到json中
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=(localdb)\\MSSQLLocalDB;Database=BlogDB;Trusted_Connection=True;MultipleActiveResultSets=true"
-  },

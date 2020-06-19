@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace crud_demo.Controllers
+namespace swag_demo.Controllers
 {
     [ApiController]
     [Route("[controller]")]

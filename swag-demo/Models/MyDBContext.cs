@@ -3,18 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace crud_demo.Models
+namespace swag_demo.Models
 {
-    public partial class BlogdbContext : DbContext
+    public partial class MyDBContext : DbContext
     {
-        public BlogdbContext()
+        public MyDBContext()
         {
         }
 
-        public BlogdbContext(DbContextOptions<BlogdbContext> options)
+        public MyDBContext(DbContextOptions<MyDBContext> options)
             : base(options)
         {
         }
+
+
 
         public virtual DbSet<Blogs> Blogs { get; set; }
         public virtual DbSet<Posts> Posts { get; set; }
