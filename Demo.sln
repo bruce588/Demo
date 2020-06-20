@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "crud-demo", "crud-demo\crud
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "swag-demo", "swag-demo\swag-demo.csproj", "{EA6BDEB3-4206-45E7-B1AA-45851D788194}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRChat", "SignalRChat\SignalRChat.csproj", "{974FB0CB-B105-470C-AB09-013B453000CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,18 @@ Global
 		{EA6BDEB3-4206-45E7-B1AA-45851D788194}.Release|x64.Build.0 = Release|Any CPU
 		{EA6BDEB3-4206-45E7-B1AA-45851D788194}.Release|x86.ActiveCfg = Release|Any CPU
 		{EA6BDEB3-4206-45E7-B1AA-45851D788194}.Release|x86.Build.0 = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|x64.Build.0 = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Debug|x86.Build.0 = Debug|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|x64.ActiveCfg = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|x64.Build.0 = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|x86.ActiveCfg = Release|Any CPU
+		{974FB0CB-B105-470C-AB09-013B453000CA}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
