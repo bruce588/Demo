@@ -9,6 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-   </ItemGroup>
+    <None Remove="Files\00.課前安裝系統.pptx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Files\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\FordGT.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\TextFile.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>

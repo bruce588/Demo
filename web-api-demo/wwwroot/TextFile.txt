@@ -1,0 +1,14 @@
+﻿前幾篇筆記提到 EF Core 主打 Code First 概念，講求先定義 Model 再自動產生資料表 Schema 的運作模式。
+
+熟悉傳統資料庫程式開發方式的老鳥們看完猛搖頭：為什麼把事情搞到這麼複雜？ 先定義 Schema 文件直接決定關聯建好資料庫，開發者照著規格寫程式不是比較簡單明瞭？ 為什麼要搞出一堆 Attribute、Fluent API 間接決定 Index、Primary Key、Foreign 庸人自擾？
+
+EF Code First 有個傳統資料庫程式開發所沒有的特異功能 - 跨資料!
+
+這一篇將試著用一個範例展示 EF Core Code First 跨資料庫的威力， 示範如何只改一行程式，就讓同一支程式在 SQLite、SQL Server 及 Oracle 間自由切換。 看完大家可以評估投資時間學習及構思有點複雜性的 EF Model 設計是否值得。
+
+我開了一個 .NET Core Console Application 專案，透過 NuGet 安裝四個套件：
+
+Microsoft.EntityFrameworkCore.Sqlite (SQLite 資料庫使用)
+Microsoft.EnittyFrameworkCore.SqlServer (SQL Server 使用)
+Oracle.EntityFrameworkCore (Oracle 資料庫使用)
+Microsoft.EntitryFrameworkCore.Design (產生 Migrations Script 用)
