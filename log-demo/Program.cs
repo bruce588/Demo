@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.EventLog;
 
 namespace log_demo
 {
@@ -25,7 +26,13 @@ namespace log_demo
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                   
+                    webBuilder.ConfigureLogging(logger =>
+                    {
+                        logger.ClearProviders();
+                        logger.AddConsole();
+                        logger.AddEventLog();
+                        
+                    });
                 });
     }
 }

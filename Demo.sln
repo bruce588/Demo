@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "web-api-demo", "web-api-demo\web-api-demo.csproj", "{2FC0A4D8-5753-4FA8-8477-B740BB10C555}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docker-demo", "docker-demo\docker-demo.csproj", "{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "async-demo", "async-demo\async-demo.csproj", "{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "middleware-demo", "middleware-demo\middleware-demo.csproj", "{DE7F6421-A030-448C-A523-E0E60960D35F}"
@@ -28,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "token-demo", "token-demo\token-demo.csproj", "{862F7D31-0214-4D1A-8836-D737318A8BDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log-demo", "log-demo\log-demo.csproj", "{C47AC366-875D-4E2D-831F-01465435662A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serilog-demo", "serilog-demo\serilog-demo.csproj", "{ABF58D22-B9D3-48E7-B97F-27316002E21D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,18 +51,6 @@ Global
 		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x64.Build.0 = Release|Any CPU
 		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x86.ActiveCfg = Release|Any CPU
 		{2FC0A4D8-5753-4FA8-8477-B740BB10C555}.Release|x86.Build.0 = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x64.Build.0 = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Debug|x86.Build.0 = Debug|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x64.ActiveCfg = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x64.Build.0 = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x86.ActiveCfg = Release|Any CPU
-		{08C4C633-99F9-4B0B-8E3D-349F25DC09B3}.Release|x86.Build.0 = Release|Any CPU
 		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7FBCE9D-44A5-4CB2-8076-32ACF3E0D462}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -195,6 +183,18 @@ Global
 		{C47AC366-875D-4E2D-831F-01465435662A}.Release|x64.Build.0 = Release|Any CPU
 		{C47AC366-875D-4E2D-831F-01465435662A}.Release|x86.ActiveCfg = Release|Any CPU
 		{C47AC366-875D-4E2D-831F-01465435662A}.Release|x86.Build.0 = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|x64.Build.0 = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Debug|x86.Build.0 = Debug|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|x64.ActiveCfg = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|x64.Build.0 = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|x86.ActiveCfg = Release|Any CPU
+		{ABF58D22-B9D3-48E7-B97F-27316002E21D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
